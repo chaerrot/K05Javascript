@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu04.html</title>
+    <style>
+        h3 {
+            width: 400px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: separate;
+            
+            text-indent: initial;
+            border-spacing: 2px;
+            border-color: grey;
+        }
+        table td {
+            border: 1px;
+        }
+    </style>
+    <script>
+        document.write("<h3>document.write()로 표만들기</h3>");
+
+        document.write("<table>");
+            for (var i=0; i<2; i++) {
+                document.write("<tr>");
+                for (var j=0; j<10; j++) {
+                    document.write("<td>");
+                    document.write("abc");
+                    document.write("</td>");
+                    
+                }
+                document.write("</tr>");
+                    
+            }
+        document.write("</table>");
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+
+        </tr>
+        <tr>
+            
+        </tr>
+    </table>
+</body>
+</html>
