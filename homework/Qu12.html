@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu12.html</title>
+    <script>
+        var names = new Array("wonsun", "jaemoonlee", "kitae", "gracehwang");
+        
+        document.write("<h3>문자열 배열 다루기</h3>");
+        document.write("<hr>");
+
+        document.write("이름: ");
+        for (i=0; i<names.length; i++) {
+            document.write(names[i] +" ");
+        }
+        
+        document.write("<br>가장 긴 이름: ");
+        var longest = names;
+        for (i=0; i<names.length; i++) {;  
+            if (names[i].length > longest.length) {
+                longest = names[i];
+            }
+        }
+        document.write(longest);
+
+        document.write("<br>가장 먼저 나오는 이름: ");
+        var first = names;
+        for (i=0; i<names.length; i++) {
+            if (names[i]< first)
+                first = names[i];
+        }
+        document.write(first);
+
+        document.write("<br>증가순 이름: ");
+        names.sort( function(a, b) {
+            if (a>b) return 1;
+            if (a==b) return 0;
+            if (a<b) return -1;
+        });
+        for (i=0; i<names.length; i++) {
+            document.write(names[i] +" ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
