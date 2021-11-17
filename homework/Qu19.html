@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu19.html</title>
+    <script>
+        
+        function changePic() {
+            var img = document.getElementsByTagName("img");
+            console.log(img.length);
+
+            for (var i=0; i<img.length; i++) {
+                img[i].style.zIndex++;
+            }
+
+        }
+
+        // function changePic() {
+        //     var img
+        // }
+
+        // var fontToggle = 0; //폰트 토글을 위한 전역변수
+        // function setFont() {
+        //     //문제에서 주어진 폰트를 배열로 선언
+        //     var fontArr = ['Vernada', '굴림체', '휴먼옛체', '궁서', 'Impact'];
+        //     //정수르 5로 나누면 나머지는 0~4까지 생성된다. 배열의 인덱스와 일치함.
+        //     var idx = fontToggle % 5;
+        //     //스타일 지정
+        //     pTag.style.fontFamily = fontArr[idx];
+        //     //함수를 호출할 때마다 전역변수 증가
+        //     fontToggle++;
+
+    </script>
+    <style>
+        div { position : absolute; }
+        img { position : absolute; }
+    </style>
+</head>
+<body>
+    <h3>z-index 스타일 프로퍼티</h3>
+    <hr>
+    <div onmousedown="changePic();">
+        <br>
+        <img src="../images/1.jpg" width="100" height="140" alt="하트A">
+        <img src="../images/2.jpg" width="100" height="140" alt="하트2">
+        <img src="../images/3.jpg" width="100" height="140" alt="하트3">
+        <img src="../images/7.jpg" width="100" height="140" alt="하트7">
+    </div>    
+</body>
+</html>

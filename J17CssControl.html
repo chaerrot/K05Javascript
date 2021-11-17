@@ -12,7 +12,7 @@
         window.onload = function() {
             //기사가 있는 p태그의 DOM을 얻어 옴
             pTag = document.getElementById("article");
-            //현재 설정된 폰트 사이즈르 얻어 옴(별도의 사이즈 지정이 없다면 16px)
+            //현재 설정된 폰트 사이즈를 얻어 옴(별도의 사이즈 지정이 없다면 16px)
             pSize = parseInt(pTag.style.fontSize);
         }
 
@@ -79,7 +79,7 @@
         function setFont() {
             //문제에서 주어진 폰트를 배열로 선언
             var fontArr = ['Vernada', '굴림체', '휴먼옛체', '궁서', 'Impact'];
-            //정수르 5로 나누면 나머지는 0~4까지 생성된다. 배열의 인덱스와 일치함.
+            //정수를 5로 나누면 나머지는 0~4까지 생성된다. 배열의 인덱스와 일치함.
             var idx = fontToggle % 5;
             //스타일 지정
             pTag.style.fontFamily = fontArr[idx];

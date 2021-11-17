@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J20Canvas03.html</title>
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById("canvas1");
+            var c = canvas.getContext("2d");
+
+            c.beginPath();
+            s.strokeStyle = "#0000ff";
+            c.moveTo(10, 10);
+            c.lineTo(120, 166);
+            c.lineTo(180, 76);
+            c.lineTo(240, 250);
+            c.lineTo(300, 70);
+            c.lineTo(360, 200);
+            c.lineTo(420, 120);
+            c.lineTo(490, 390);
+            c.stroke();
+            c.closePath();
+
+            var canvas2 = document.getElementById("canvas2");
+            var cx = canvas2.getContext("2d");
+
+            cx.beginPath();
+            cx.moveTo(120, 20);
+            cx.lineTo(20, 60);
+            cx.lineTo(150, 120);
+            cx.lineTo(120, 20);
+            cx.strokeStyle = "magenta";
+            cx.stroke;
+
+            cx.beginPath();
+            cx.arc(300, 700, 30, 0, 360, false);
+            cx.strokeStyle = "blue";
+            cx.stroke();
+            cx.fillStyle = "yellow";
+            cx.fill();
+
+            cx.beginPath();
+            cx.arc(300, 70, 50, Math.PI / 2, Math.PI, true);
+            cx.strokeStyle = "green";
+            cx.stroke();
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

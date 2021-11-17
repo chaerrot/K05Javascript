@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qu18.html</title>
+    <script>
+        // var a =  document.getElementsByTagName("span");
+
+        // function fnAnswer() {
+        //     console.log(a);
+        //      for (var i=0; i<a.length; i++) {
+                
+        //             if (a[i]==0) {
+        //                 a[i].innerHTML = eval(2+4);
+        //             }
+        //             else if (a[i]==1) {
+        //                 a[i].innerHTML = eval(4*20+64);
+        //             }
+        //             else if (a[i]==2) {
+        //                 a[i].innerHTML = eval(20/5-8*2);
+        //             }
+        //      }
+        // }
+
+
+        function cal(strNum) {
+            var result = eval(strNum);
+
+            span태그 = result;
+        }
+
+    </script>
+</head>
+<body>
+    <h3>계산해봅시다</h3>
+	<hr>
+	<p>2 + 4 = <span onclick="cal(2 + 4);">답</span><p>
+	<p>4 * 20 + 64 = <span onclick="cal(4 * 20 + 64);">답</span><p>
+	<p>20/5-8*2 = <span onclick="cal(20/5-8*2);">답</span><p>
+</body>
+</html>
